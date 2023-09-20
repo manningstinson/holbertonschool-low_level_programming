@@ -1,2 +1,2 @@
-# holbertonschool-low_level_programming
+# Holbertson Low Level Programming - C
 C - Low Level Programming
