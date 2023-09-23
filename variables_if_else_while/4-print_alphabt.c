@@ -8,13 +8,15 @@
 
 int main(void)
 {
-	char lowercaseLetter = 'a';
+	char currentChar;
 
-	while (lowercaseLetter <= 'z')
+	for (currentChar = 'a'; currentChar <= 'z'; currentChar++)
 	{
-		putchar(lowercaseLetter);
-		lowercaseLetter++;
+		if (currentChar != 'q' && currentChar != 'e')
+		putchar(currentChar);
 	}
 	putchar('\n');
+
 	return (0);
+
 }
