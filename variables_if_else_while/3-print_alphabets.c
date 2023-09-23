@@ -1,22 +1,20 @@
+
 #include <stdio.h>
 
 /**
- * * main - Prints the alphabet
+ * main - Prints the alphabet.
  *
  * Return: Always 0 (Success)
  */
-
 int main(void)
 {
-	char currentChar;
+	char alp[52] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	int i;
 
-	for (currentChar = 'a'; currentChar <= 'z'; currentChar++)
+	for (i = 0; i < 52; i++)
 	{
-	if (currentChar != 'q' && currentChar != 'e')
-	{
-		putchar(currentChar);
-		}
+		putchar(alp[i]);
 	}
-		putchar('\n');
+	putchar('\n');
 	return (0);
 }
