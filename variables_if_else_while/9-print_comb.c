@@ -12,8 +12,8 @@ int main(void)
 	for (i = 0; i <= 9; i++)
 	{
 	putchar('0' + i);
-	putchar(',');
-	putchar(' ');
+	putchar(',' * (i < 9));
+	putchar(' ' * (i < 9));
 	}
 	putchar('\n');
 	return (0);
