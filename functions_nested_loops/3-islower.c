@@ -13,6 +13,6 @@
 int _islower(int c)
 {
     /* Check if value of 'c' is within the range of lowercase letters*/
-       
+
 	return (c >= 97 && c <= 122);
 }
