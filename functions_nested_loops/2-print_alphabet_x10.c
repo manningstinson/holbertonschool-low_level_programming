@@ -1,32 +1,28 @@
 #include "main.h"
 
+
 /**
- * main - Prints _putchar.
+ * print_alphabet_x10 - Prints the alphabet 10 times.
  *
  * Return: Always 0 (Success)
- *
  */
 
+void print_alphabet_x10(void)
 
-#include <stdio.h>
+{	int count;
+	char letter;
 
-void _putchar(char c) 
-{
-       	putchar(c);
+	/* This loop runs 10 times*/
+	for (count = 0; count < 10; count++)
+	{
+		/* This loop prints the alphabet*/
+		for (letter = 'a'; letter <= 'z'; letter++)
+
+		{
+			_putchar(letter);
+		}
+
+	 /* Print a newline character after each alphabet*/
+			_putchar('\n');
+	}
 }
-
-void print_alphabet(void) {
-       	char letter = 'a';
-       	while (letter <= 'z') {
-	       	_putchar(letter)
-		       	letter++;
-    }
-       	_putchar('\n');
-
-int main()
-{
-    /*Call the print_alphabet function to print the alphabet*/
-    print_alphabet();
-    return 0;
-}
-
