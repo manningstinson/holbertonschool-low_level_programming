@@ -14,27 +14,28 @@ int _atoi(char *s)
 
 	while (*s)
 	{
-		if (*s >= '0' && *s <= '9') {
-		/* break was added because of mixed characters*/
+		if (*s >= '0' && *s <= '9')
+		{
 			break;
 		}
 		if (*s == '-')
 		{
-		sign = -1;
+			sign = -1;
 		}
 		if (*s >= '0' || *s <= '9')
 		{
-		break;
+			break;
+			s++;
 		}
-		s++;
-	}
-	while (*s >= '0' && *s <= '9')
-	{
-		int digit = *s - '0';
 
-		if (result > (2147483647 - digit) / 10)
+		while (*s >= '0' && *s <= '9')
 		{
-			return ((sign == 1) ? 2147483647 : -2147483648);
+			int digit = *s - '0';
+
+			if (result > (2147483647 - digit) / 10)
+			{
+				return ((sign == 1) ? 2147483647 : -2147483648);
+			}
 			result = result * 10 + digit;
 			s++;
 		}
