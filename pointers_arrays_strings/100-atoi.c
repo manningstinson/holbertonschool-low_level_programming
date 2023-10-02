@@ -40,6 +40,5 @@ int _atoi(char *s)
 			result = result * 10 + digit;
 			s++;
 		}
-		
 		return (result * sign);
 }
