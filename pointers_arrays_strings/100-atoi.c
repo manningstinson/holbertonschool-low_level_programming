@@ -1,5 +1,4 @@
 #include "main.h"
-#include <limits.h>
 
 /**
  * _atoi - convert to a int
@@ -25,8 +24,8 @@ int _atoi(char *s)
 		if (*s >= '0' || *s <= '9')
 		{
 			break;
-			s++;
 		}
+			s++;
 
 		while (*s >= '0' && *s <= '9')
 		{
