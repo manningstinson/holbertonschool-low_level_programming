@@ -1,4 +1,5 @@
 #include "main.h"
+#include "limits.h"
 
 /**
  * _atoi - convert to a int
