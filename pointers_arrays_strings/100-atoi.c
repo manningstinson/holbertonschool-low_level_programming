@@ -26,6 +26,7 @@ int _atoi(char *s)
 			break;
 		}
 			s++;
+	}
 
 		while (*s >= '0' && *s <= '9')
 		{
@@ -38,5 +39,6 @@ int _atoi(char *s)
 			result = result * 10 + digit;
 			s++;
 		}
+		
 		return (result * sign);
 }
