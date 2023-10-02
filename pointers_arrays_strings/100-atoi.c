@@ -15,7 +15,7 @@ int _atoi(char *s)
 	while (*s)
 	{
 		if (*s >= '0' && *s <= '9')
-		{
+		/* break was added because of mixed characters*/
 			break;
 		}
 		if (*s == '-')
