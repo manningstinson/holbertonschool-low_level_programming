@@ -1,11 +1,28 @@
 #include "main.h"
 
 /**
- * _strcmp  - compare  a string
- * @dest:char
- * @src:char
- * @n:int
+ * string_toupper - change lowercase to uppercase
+ * @str:String
+ *
  * Return:char
  */
 
-char *string_toupper(char *);
+char *string_toupper(char *str)
+{
+	int a = 0;
+
+	while (str[a] != '\0')
+	{
+		{
+
+		if (str[a] >= 'a' && str[a] <= 'z')
+			str[a] -= 32;
+		}
+
+	a++;
+
+	}
+
+	return (str);
+}
+

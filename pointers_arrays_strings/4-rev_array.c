@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * _strcmp  - compare  a string
- * @dest:char
- * @src:char
- * @n:int
- * Return:char
+ * _reverse - Reverse a portion of an array of integers
+ * @a: Pointer to the array
+ * @n: Number of elements to reverse
+ *
+ * Return: void
  */
 
 void reverse_array(int *a, int n);
