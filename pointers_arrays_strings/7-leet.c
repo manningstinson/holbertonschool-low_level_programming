@@ -15,15 +15,23 @@ char *leet(char *s)
 
 	for (i = 0; s[i]; i++)
 	{
-		j = 0;
-
-		while (a[j])
+		if (s[i] == a[0] || s[i] == a[1] || s[i] == a[2] || s[i] == a[3] ||
+		    s[i] == a[4] || s[i] == a[5] || s[i] == a[6])
 		{
-			(s[i] == a[j]) ? (_putchar(b[j]), j = 0, 0) : j++;
+			for (j = 0; a[j]; j++)
+			{
+				if (s[i] == a[j])
+				{
+					_putchar(b[j]);
+					break;
+				}
+			}
 		}
-
-		if (!a[j])
+		else
+		{
 			_putchar(s[i]);
+		}
 	}
 	return (s);
 }
+
