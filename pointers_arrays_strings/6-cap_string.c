@@ -23,13 +23,9 @@ char *cap_string(char *s) {
         } else {
             if (capitalize_next) {
                 if (s[a] >= 'a' && s[a] <= 'z') {
-                    _putchar(s[a] - 32);
-                } else {
-                    _putchar(s[a]);
+                    s[a] -= 'a' - 'A';
                 }
                 capitalize_next = 0;
-            } else {
-                _putchar(s[a]);
             }
         }
     }
