@@ -32,11 +32,7 @@ char *cap_string(char *s) {
                 _putchar(s[a]);
             }
         }
-
-        if (s[a] == ' ' || s[a] == '\t' || s[a] == '\n') {
-            _putchar(s[a]);
-        }
     }
 
-    return s;
+    return (s);
 }
