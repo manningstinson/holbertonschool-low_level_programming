@@ -9,8 +9,7 @@
 
 char *leet(char *s)
 {
-    int i = 0;
-    int j = 0;
+    int i, j = 0;
     char leet_array[128] = {0};
     char a[] = "aAeEoOtTlL";
     char b[] = "4433007711";
@@ -19,10 +18,16 @@ char *leet(char *s)
         leet_array[(int)a[j]] = b[j];
     }
 
-    while (s[i]) {
-        _putchar(leet_array[(int)s[i]] ? leet_array[(int)s[i]] : s[i]);
-        i++;
+    for (; s[i]; i++) {
+        char replacement = leet_array[(int)s[i]];
+        char original = s[i];
+
+        if (replacement != '\0') {
+            _putchar(replacement);
+        } else {
+            _putchar(original);
+        }
     }
 
-    return (s);
+    return s;
 }
