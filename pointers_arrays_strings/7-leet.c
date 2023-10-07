@@ -9,22 +9,22 @@
 
 char *leet(char *s)
 {
-    char a[] = "aAeEoOtTlL";
-    char b[] = "4433007711";
+	char a[] = "aAeEoOtTlL";
+	char b[] = "4433007711";
+	int i = 0;
 
-    int i = 0;
-    for (; s[i]; i++)
-    {
-        int j;
-        for (j = 0; a[j]; j++)
-        {
-            if (s[i] == a[j])
-            {
-                s[i] = b[j];
-                break;
-            }
-        }
-    }
+	for (; s[i]; i++)
+	{
+		int j = 0;
 
-    return s;
+		for (; a[j]; j++)
+		{
+			if (s[i] == a[j])
+			{
+				s[i] = b[j];
+				break;
+			}
+		}
+	}
+	return (s);
 }
