@@ -10,11 +10,12 @@
 char *leet(char *s)
 {
     int i = 0;
+    int j = 0;
     char leet_array[128] = {0};
     char a[] = "aAeEoOtTlL";
     char b[] = "4433007711";
 
-    for (int j = 0; a[j]; j++) {
+    for (; a[j]; j++) {
         leet_array[(int)a[j]] = b[j];
     }
 
@@ -25,4 +26,3 @@ char *leet(char *s)
 
     return (s);
 }
-
