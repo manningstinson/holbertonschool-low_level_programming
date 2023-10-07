@@ -10,7 +10,7 @@
 char *leet(char *s)
 {
     int i, j = 0;
-    char leet_array[128] = {0};
+    char leet_array[128] = {0}; // Initialize to zeros
     char a[] = "aAeEoOtTlL";
     char b[] = "4433007711";
 
