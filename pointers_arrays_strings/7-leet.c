@@ -9,25 +9,20 @@
 
 char *leet(char *s)
 {
-	int i, j;
-	char a[] = "aAeEoOtTlL";
-	char b[] = "4433007711";
+    int i = 0;
+    char leet_array[128] = {0};
+    char a[] = "aAeEoOtTlL";
+    char b[] = "4433007711";
 
-	for (i = 0; s[i]; i++)
-	{
-		int found = 0;
-		for (j = 0; a[j]; j++)
-		{
-			if (s[i] == a[j])
-			{
-				_putchar(b[j]);
-				found = 1;
-				break;
-			}
-		}
-		
-		if (!found)
-			_putchar(s[i]);
-	}
-	return (s);
+    for (int j = 0; a[j]; j++) {
+        leet_array[(int)a[j]] = b[j];
+    }
+
+    while (s[i]) {
+        _putchar(leet_array[(int)s[i]] ? leet_array[(int)s[i]] : s[i]);
+        i++;
+    }
+
+    return (s);
 }
+
