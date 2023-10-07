@@ -9,23 +9,20 @@
 
 char *leet(char *s)
 {
-    int i, j = 0;
-    char leet_array[128] = {0}; // Initialize to zeros
     char a[] = "aAeEoOtTlL";
     char b[] = "4433007711";
 
-    for (; a[j]; j++) {
-        leet_array[(int)a[j]] = b[j];
-    }
-
-    for (; s[i]; i++) {
-        char replacement = leet_array[(int)s[i]];
-        char original = s[i];
-
-        if (replacement != '\0') {
-            _putchar(replacement);
-        } else {
-            _putchar(original);
+    int i = 0;
+    for (; s[i]; i++)
+    {
+        int j;
+        for (j = 0; a[j]; j++)
+        {
+            if (s[i] == a[j])
+            {
+                s[i] = b[j];
+                break;
+            }
         }
     }
 
