@@ -2,8 +2,8 @@
 
 /**
  * _reverse - Reverse a portion of an array of integers
- * @a: Pointer to the array
- * @n: Number of elements to reverse
+ * @a:array
+ * @n:number elements in reverse
  *
  * Return: void
  */
