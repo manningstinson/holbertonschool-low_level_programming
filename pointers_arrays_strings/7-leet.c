@@ -15,23 +15,19 @@ char *leet(char *s)
 
 	for (i = 0; s[i]; i++)
 	{
-		if (s[i] == a[0] || s[i] == a[1] || s[i] == a[2] || s[i] == a[3] ||
-		    s[i] == a[4] || s[i] == a[5] || s[i] == a[6])
+		int found = 0;
+		for (j = 0; a[j]; j++)
 		{
-			for (j = 0; a[j]; j++)
+			if (s[i] == a[j])
 			{
-				if (s[i] == a[j])
-				{
-					_putchar(b[j]);
-					break;
-				}
+				_putchar(b[j]);
+				found = 1;
+				break;
 			}
 		}
-		else
-		{
+		
+		if (!found)
 			_putchar(s[i]);
-		}
 	}
 	return (s);
 }
-
