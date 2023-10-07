@@ -15,14 +15,13 @@ char *leet(char *s)
 
 	for (i = 0; s[i]; i++)
 	{
-		for (j = 0; a[j]; j++)
+		j = 0; // Reset j for each character in s
+
+		while (a[j])
 		{
-			if (s[i] == a[j])
-			{
-				_putchar(b[j]);
-				break;
-			}
+			(s[i] == a[j]) ? (_putchar(b[j]), j = 0, 0) : j++;
 		}
+
 		if (!a[j])
 			_putchar(s[i]);
 	}
