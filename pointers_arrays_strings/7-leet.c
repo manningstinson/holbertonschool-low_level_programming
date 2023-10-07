@@ -15,7 +15,7 @@ char *leet(char *s)
 
 	for (i = 0; s[i]; i++)
 	{
-		j = 0; // Reset j for each character in s
+		j = 0;
 
 		while (a[j])
 		{
@@ -27,4 +27,3 @@ char *leet(char *s)
 	}
 	return (s);
 }
-
