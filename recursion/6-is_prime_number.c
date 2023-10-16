@@ -7,18 +7,29 @@
  *
  * Return: 1 if n is prime, 0 otherwise
  */
-int is_prime_recursive(int n, int divisor) {
-    if (n <= 1) {
-        return 0;  /* Numbers less than or equal to 1 are not prime */
-    } else if (n == 2) {
-        return 1;  /* 2 is a prime number */
-    } else if (divisor == 1) {
-        return 1;  /* Base case: n is only divisible by 1, so it's prime */
-    } else if (n % divisor == 0) {
-        return 0;  /* n is divisible by a number other than 1 and itself, so it's not prime */
-    } else {
-        return is_prime_recursive(n, divisor - 1);  /* Check the next divisor */
-    }
+
+int is_prime_recursive(int n, int divisor)
+{
+	if (n <= 1)
+	{
+		return (0);
+	}
+	else if (n == 2)
+	{
+		return (1);
+	}
+	else if (divisor == 1)
+	{
+		return (1);
+	}
+	else if (n % divisor == 0)
+	{
+		return (0);
+	}
+	else
+	{
+		return (is_prime_recursive(n, divisor - 1));
+	}
 }
 
 /**
@@ -27,7 +38,8 @@ int is_prime_recursive(int n, int divisor) {
  *
  * Return: 1 if n is prime, 0 otherwise
  */
-int is_prime_number(int n) {
-    return is_prime_recursive(n, n - 1);  /* Start checking with n-1 as the divisor */
-}
 
+int is_prime_number(int n)
+{
+	return (is_prime_recursive(n, n - 1));
+}
