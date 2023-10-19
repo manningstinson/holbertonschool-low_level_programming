@@ -3,9 +3,10 @@
 #include <stdlib.h>
 
 /**
- * create_array - creates an array of characters
- * @size: the size of the array
- * @c: the character used to initialize the array
+ * create_array - allocate space for an array
+ * @size: unsigned int -size of array
+ * @c:char
+ * Return:char
 */
 
 char *create_array(unsigned int size, char c)
