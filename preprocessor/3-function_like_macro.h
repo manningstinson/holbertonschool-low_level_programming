@@ -1,7 +1,12 @@
-#ifndef ABS_DIFF_H
-#define ABS_DIFF_H
+#include <stdio.h>
+#define ABS(x) ((x) < 0 ? -(x) : (x))
 
-#define ABS_DIFF(a, b) ((a > b) ? (a - b) : (b - a))
+int main(void)
+{
+	int num = -5;
+	int result = ABS(num);
 
-#endif /* ABS_DIFF_H */
+	printf("Absolute value of %d is %d\n", num, result);
 
+	return(0);
+}
