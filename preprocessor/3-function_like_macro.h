@@ -1,12 +1,13 @@
-#include <stdio.h>
-#define ABS(x) ((x) < 0 ? -(x) : (x))
+#ifndef FUNCTION_LIKE_MACRO_HEADER
+#define FUNCTION_LIKE_MACRO_HEADER
 
-int main(void)
-{
-	int num = -5;
-	int result = ABS(num);
+/*
+ * Header file that defines a function like macro
+ * ABS - computes the absolute value of a number X
+ */
 
-	printf("Absolute value of %d is %d\n", num, result);
+#define ABS(x) ((x < 0) ? -(x) : (x))
 
-	return(0);
-}
+
+#endif
+
