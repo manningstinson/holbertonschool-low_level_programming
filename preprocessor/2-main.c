@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
  * main - Entry point of the program
@@ -8,6 +9,6 @@
 
 int main(void)
 {
-	printf("This program was compiled from: __FILE__\n");
+	printf("This program was compiled from: %s\n", __FILE__);
 	return (0);
 }
