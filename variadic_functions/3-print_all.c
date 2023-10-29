@@ -2,55 +2,52 @@
 #include <stdarg.h>
 #include <stdio.h>
 
-/**
- * print_all - Print values based on a format string
- * @format: A format string specifying the types of arguments
- * @...: The variadic arguments
- *
- * Return: 0 for SUCCESS
- */
-int print_all(const char * const format, ...) 
-{
-    va_list args;
-    char *separator = "";
-    const char *current_format = format;
-    int n;
-    float f;
+void p_char(va_list list) {
     char c;
-    char *s;
+    c = va_arg(list, int);
+    printf("%c", c);
+}
 
-    va_start(args, format);
+void p_string(va_list list) {
+    char *str;
+    str = va_arg(list, char*);
+    printf("%s", (str != NULL) ? str : "(nil)");
+}
 
-    separator = "";
-    current_format = format;
+void p_integer(va_list list) {
+    int i;
+    i = va_arg(list, int);
+    printf("%d", i);
+}
 
-    while (*current_format) {
-        if (*current_format == 'c') {
-            c = va_arg(args, int);
-            putchar(c);
-        }
-        if (*current_format == 's') {
-            s = va_arg(args, char *);
-            if (s == NULL)
-                printf("%s(nil)", separator);
-            else
-                printf("%s%s", separator, s);
-        }
-        if (*current_format == 'i') {
-            n = va_arg(args, int);
-            printf("%s%d", separator, n);
-        }
-        if (*current_format == 'f') {
-            f = (float)va_arg(args, double);
-            printf("%s%f", separator, f);
-        }
+void p_float(va_list list) {
+    double f;
+    f = va_arg(list, double);
+    printf("%f", f);
+}
 
-        separator = ", ";
-        current_format++;
+
+void print_all(const char * const format, ...)
+{
+    int printed = 0;
+    char *s = "";
+    void (*print_functions[])(va_list) = {p_char, p_string, p_integer, p_float};
+    va_list valist;
+    char *format_copy = (char *)format;
+
+    va_start(valist, format);
+
+    while (*format_copy && printed < 4) {
+        char c = *format_copy;
+        if (c >= 'c' && c <= 'f') {
+            printf("%s", s);
+            print_functions[c - 'c'](valist);
+            s = ", ";
+            printed++;
+        }
+        format_copy++;
     }
 
-    va_end(args);
-    putchar('\n');
-
-    return 0;
+    va_end(valist);
+    printf("\n");
 }
