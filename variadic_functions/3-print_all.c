@@ -31,7 +31,7 @@ void print_all(const char * const format, ...)
 {
     int printed = 0;
     char *s = "";
-    void (*print_functions[])(va_list) = {p_char, p_string, p_integer, p_float};
+    void (*print_functions[])(va_list) = {p_float, p_char, p_string, p_integer};
     va_list valist;
     char *format_copy = (char *)format;
 
