@@ -46,13 +46,18 @@ void p_float(va_list list) {
  * @format: Format string
  */
 void print_all(const char * const format, ...) {
-    
+   
 	va_list valist;
 	int printed = 0;
 	char *s = "";
 	const char *format_ptr = format;
     
     va_start(valist, format);
+
+     if (format == NULL) {
+        printf("\n");
+        return;
+    }
 
     while (*format_ptr) {
         switch (*format_ptr) {
