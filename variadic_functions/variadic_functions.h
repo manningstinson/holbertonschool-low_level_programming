@@ -1,5 +1,6 @@
-#ifndef MAIN
-#define MAIN
+#ifndef VARIADIC_FUNCTIONS
+#define VARIADIC_FUNCTIONS
+
 /*Contents of the header file*/
 
 int _putchar(char c);
