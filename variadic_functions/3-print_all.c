@@ -3,60 +3,54 @@
 #include <stdio.h>
 
 /**
+ * print_all - Print values based on a format string
+ * @format: A format string specifying the types of arguments
+ * @...: The variadic arguments
  *
- *
- * comments go here
- *
+ * Return: 0 for SUCCESS
  */
-
-#include <stdarg.h>
-#include <stdio.h>
-
-#include <stdarg.h>
-#include <stdio.h>
-
-void print_all(const char * const format, ...) {
+int print_all(const char * const format, ...) 
+{
     va_list args;
     char *separator = "";
-    char *current_format;
-    int first;
-    char c;
-    int i;
+    const char *current_format = format;
+    int n;
     float f;
+    char c;
     char *s;
 
     va_start(args, format);
-    current_format = (char *)format;
-    first = 1;
 
-    while (current_format && *current_format) {
-        if (!first)
-            printf("%s", separator);
+    separator = "";
+    current_format = format;
 
+    while (*current_format) {
         if (*current_format == 'c') {
             c = va_arg(args, int);
-            printf("%c", c);
-        } else if (*current_format == 'i') {
-            i = va_arg(args, int);
-            printf("%d", i);
-        } else if (*current_format == 'f') {
-            f = (float)va_arg(args, double);
-            printf("%f", f);
-        } else if (*current_format == 's') {
+            putchar(c);
+        }
+        if (*current_format == 's') {
             s = va_arg(args, char *);
             if (s == NULL)
-                printf("(nil)");
+                printf("%s(nil)", separator);
             else
-                printf("%s", s);
+                printf("%s%s", separator, s);
+        }
+        if (*current_format == 'i') {
+            n = va_arg(args, int);
+            printf("%s%d", separator, n);
+        }
+        if (*current_format == 'f') {
+            f = (float)va_arg(args, double);
+            printf("%s%f", separator, f);
         }
 
-        first = 0;
         separator = ", ";
         current_format++;
     }
 
-    printf("\n");
-
     va_end(args);
-}
+    putchar('\n');
 
+    return 0;
+}
