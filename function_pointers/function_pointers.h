@@ -1,8 +1,8 @@
+#ifndef FUNCTION_POINTERS
+#define FUNCTION_POINTERS
+
 #include <stddef.h>
 
-
-#ifndef MAIN
-#define MAIN
 /*Contents of the header file*/
 
 int _putchar(char c);
