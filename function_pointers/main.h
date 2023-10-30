@@ -1,3 +1,6 @@
+#include <stddef.h>
+
+
 #ifndef MAIN
 #define MAIN
 /*Contents of the header file*/
