@@ -16,7 +16,7 @@ Of course! Let's break down these basic concepts in a simple way:
 
 **Basic Operations**: These are like actions we can perform on our data. The kind of data structure we use depends on what we want to do with it. Here are some common operations:
 
-   ***Traversing**: Going through the data one by one, like reading a book page by page.
+***Traversing**: Going through the data one by one, like reading a book page by page.
    ***Searching**: Looking for specific information in the data, like finding a word in a dictionary.
    ***Insertion**: Adding new data to our existing data, like putting a new book on a shelf.
    ***Deletion**: Removing data from our collection, like taking a book off the shelf.
