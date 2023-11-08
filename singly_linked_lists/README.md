@@ -10,7 +10,7 @@ Think of this as an object that holds information or data.
 ## Data Type: 
 Imagine data as different kinds of things, like numbers or words. Data types are like categories that help us understand what we can do with each kind of data. For example, numbers can be used for math, and words can be used for text.
 
-## Built-in Data Type: 
+### Built-in Data Type: 
 These are like the basic categories, such as numbers, true/false values, and decimal numbers, which the computer already knows how to work with.
 
 ## Derived Data Type: 
