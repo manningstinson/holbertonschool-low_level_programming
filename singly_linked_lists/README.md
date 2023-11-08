@@ -1,9 +1,6 @@
 ![22](https://github.com/manningstinson/holbertonschool-low_level_programming/assets/104523090/2a2f99b9-eb74-4021-93e5-9a8530f9a9ea)
 # Singly Linked Lists
 
-## Data Structures
-Of course! Let's break down these basic concepts in a simple way:
-
 ## Data Definition: 
 This is like giving a clear and simple description of something. It should be easy to understand and describe a single idea or thing.
 
