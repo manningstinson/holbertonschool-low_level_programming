@@ -13,22 +13,22 @@ Imagine data as different kinds of things, like numbers or words. Data types are
 ### Built-in Data Type: 
 These are like the basic categories, such as numbers, true/false values, and decimal numbers, which the computer already knows how to work with.
 
-## Derived Data Type: 
+### Derived Data Type: 
 These are made by combining the basic categories or operations, like creating a list from individual items, similar to making a shopping list.
 
-## Basic Operations: 
+### Basic Operations: 
 These are like actions we can perform on our data. The kind of data structure we use depends on what we want to do with it. Here are some common operations:
 
-## Traversing: 
+### Traversing: 
 Going through the data one by one, like reading a book page by page.
 
-## Searching: 
+### Searching: 
 Looking for specific information in the data, like finding a word in a dictionary.
 
-## Insertion: 
+### Insertion: 
 Adding new data to our existing data, like putting a new book on a shelf.
 
-## Deletion: 
+### Deletion: 
 Removing data from our collection, like taking a book off the shelf.
 
 ## Sorting: 
