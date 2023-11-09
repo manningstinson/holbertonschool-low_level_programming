@@ -2,7 +2,7 @@
 # ArgC, and ArgV
 **ArgC** stands for "argument count," and **ArgV** stands for "argument vector." The terms are used in programming languages like C to manage command-line arguments when you run a program.
 
-Think of argc as a counter that keeps track of how many things you tell your program when you run it. So, if you say "run my program" with no extra details, argc would be 1. If you say "run my program with these three things," argc would be 4 (because the program's name counts as one). argv helps store and organize those things.
+Think of **argc** as a counter that keeps track of how many things you tell your program when you run it. So, if you say "run my program" with no extra details, argc would be 1. If you say "run my program with these three things," argc would be 4 (because the program's name counts as one). argv helps store and organize those things.
 
 ## File Name - 1- args.c
 
