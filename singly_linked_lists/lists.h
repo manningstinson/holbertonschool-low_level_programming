@@ -1,9 +1,16 @@
-#ifndef LISTS
-#define LISTS
-/*Contents of the header file*/
+#ifndef LISTS_H
+#define LISTS_H
 
-ssize_t read_textfile(const char *filename, size_t letters);
-int create_file(const char *filename, char *text_content);
-int append_text_to_file(const char *filename, char *text_content);
+#include <stddef.h>
 
-#endif
+typedef struct list_s {
+    char *str;
+    unsigned int len;
+    struct list_s *next;
+} list_t;
+
+
+size_t print_list(const list_t *h);
+
+#endif /* LISTS_H */
+
