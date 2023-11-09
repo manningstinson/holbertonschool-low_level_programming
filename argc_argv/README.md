@@ -1,4 +1,5 @@
-![12](https://github.com/manningstinson/holbertonschool-low_level_programming/assets/104523090/fc418425-b3a0-4bb8-b74c-d907709efa94)
+<img width="640" alt="92BD337E-E456-4A94-BCA1-F398AA1BA507" src="https://github.com/manningstinson/holbertonschool-low_level_programming/assets/104523090/7c126166-f341-49ef-9988-db7b5c37b774">
+
 # ArgC, and ArgV
 **ArgC** stands for "argument count," and **ArgV** stands for "argument vector." The terms are used in programming languages like C to manage command-line arguments when you run a program.
 
