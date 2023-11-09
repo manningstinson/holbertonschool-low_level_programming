@@ -1,6 +1,6 @@
 ![22](https://github.com/manningstinson/holbertonschool-low_level_programming/assets/104523090/2a2f99b9-eb74-4021-93e5-9a8530f9a9ea)
 # Singly Linked Lists
-Of course! Think of a singly linked list like a chain of connected beads. Each bead is a "node" and holds some information. It also has a string attached to the next bead in the chain.
+Think of a singly linked list like a chain of connected beads. Each bead is a "node" and holds some information. It also has a string attached to the next bead in the chain.
 
 - You start with the first bead, called the "head."
 - Each bead has two parts: the information it carries and a string pointing to the next bead.
