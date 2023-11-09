@@ -6,7 +6,7 @@
 Think of **argc** as a counter that keeps track of how many things you tell your program when you run it. So, if you say "run my program" with no extra details, argc would be 1. If you say "run my program with these three things," argc would be 4 (because the program's name counts as one). **argv** helps store and organize those things.
 
 ## Task 1
-### Filename: 1- args.c
+Filename: 1- args.c
 
 ```c
 #include <stdio.h>
