@@ -1,5 +1,13 @@
 ![22](https://github.com/manningstinson/holbertonschool-low_level_programming/assets/104523090/2a2f99b9-eb74-4021-93e5-9a8530f9a9ea)
 # Singly Linked Lists
+Of course! Think of a singly linked list like a chain of connected beads. Each bead is a "node" and holds some information. It also has a string attached to the next bead in the chain.
+
+- You start with the first bead, called the "head."
+- Each bead has two parts: the information it carries and a string pointing to the next bead.
+- You can add new beads to the chain or remove them.
+- If you want to find a specific bead, you have to start at the head and follow the strings until you reach the right one.
+
+In simple terms, a singly linked list is like a chain of connected items where you can only move in one direction, from the first item to the next and so on.
 
 ## Data Definition: 
 This is like giving a clear and simple description of something. It should be easy to understand and describe a single idea or thing.
