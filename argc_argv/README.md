@@ -1,6 +1,6 @@
 ![12](https://github.com/manningstinson/holbertonschool-low_level_programming/assets/104523090/fc418425-b3a0-4bb8-b74c-d907709efa94)
 # ArgC, and ArgV
-ArgC stands for "argument count," and "ArgV" stands for "argument vector." The terms are used in programming languages like C to manage command-line arguments when you run a program.
+**ArgC** stands for "argument count," and **ArgV** stands for "argument vector." The terms are used in programming languages like C to manage command-line arguments when you run a program.
 
 ## File Name - 1- args.c
 
