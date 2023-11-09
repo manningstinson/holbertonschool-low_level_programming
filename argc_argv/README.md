@@ -47,6 +47,6 @@ This line uses the `printf` function to print a number. The `%d` in the format s
 
 Finally, the `return (0);` line marks the end of the `main` function and tells the computer that everything went well, and the program exits with a success code (0).
 
-## Task 2 (File Name - 2- args.c)
+## Task 2 (File Name: 2- args.c)
 
 
