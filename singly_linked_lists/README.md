@@ -1,4 +1,4 @@
-<img width="640" alt="C64DFFFD-F844-448A-9DA2-1852D386397B" src="https://github.com/manningstinson/holbertonschool-low_level_programming/assets/104523090/b2d138a0-fc78-4d30-9777-de5da868000b">
+<img width="1280" alt="C64DFFFD-F844-448A-9DA2-1852D386397B" src="https://github.com/manningstinson/holbertonschool-low_level_programming/assets/104523090/b2d138a0-fc78-4d30-9777-de5da868000b">
 
 # Singly Linked Lists
 Think of a singly linked list like a chain of connected beads. Each bead is a "node" and holds some information. It also has a string attached to the next bead in the chain.
