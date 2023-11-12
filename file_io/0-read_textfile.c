@@ -5,6 +5,16 @@
 #include <stddef.h>
 #include <stdlib.h>
 
+/**
+ * read_textfile - Reads a text file and prints it to the POSIX SO.
+ * @filename: The name of the file to read.
+ * @letters: The number of letters to read and print.
+ *
+ * Return: The actual number of letters read and printed.
+ *         0 if the file cannot be opened, read, or if write fails.
+ */
+
+
 ssize_t read_textfile(const char *filename, size_t letters)
 {
     int fd;
