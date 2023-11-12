@@ -1,32 +1,37 @@
 #include "main.h"
 #include <fcntl.h>
+#include <unistd.h>
+#include <stdlib.h>
 
-ssize_t read_textfile(const char *filename, size_t letters) {
-    int file_descriptor;
-    char buffer[1024];
-    ssize_t total_read = 0;
-    ssize_t read_result;
-    ssize_t write_result;
+/**
+ * create_file - creates a file
+ * @filename: name of the file to create
+ * @text_content: NULL terminated string to write to the file
+ *
+ * Return: 1 on success, -1 on failure
+ */
+int create_file(const char *filename, char *text_content)
+{
+    int fd, w;
+    size_t len = 0;
 
-    if (filename == NULL) {
-        return 0;
+    if (!filename)
+        return (-1);
+
+    fd = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
+    if (fd == -1)
+        return (-1);
+
+    if (text_content)
+    {
+        while (text_content[len])
+            len++;
+
+        w = write(fd, text_content, len);
+        if (w == -1)
+            return (-1);
     }
 
-    file_descriptor = open(filename, O_RDONLY);
-    if (file_descriptor == -1) {
-        return 0;
-    }
-
-    while ((read_result = read(file_descriptor, buffer, sizeof(buffer))) > 0 && total_read < letters) {
-        write_result = write(STDOUT_FILENO, buffer, (size_t)read_result);
-        if (write_result != read_result || write_result == -1) {
-            close(file_descriptor);
-            return 0;
-        }
-
-        total_read += read_result;
-    }
-
-    close(file_descriptor);
-    return total_read;
+    close(fd);
+    return (1);
 }
