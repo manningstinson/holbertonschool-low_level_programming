@@ -1,32 +1,47 @@
-#include "main.h"
 #include <fcntl.h>
+#include <unistd.h>
+#include "main.h"
+#include <stdlib.h>
 
-ssize_t read_textfile(const char *filename, size_t letters) {
-    int file_descriptor;
-    char buffer[1024];
-    ssize_t total_read = 0;
-    ssize_t read_result;
-    ssize_t write_result;
+ssize_t read_textfile(const char *filename, size_t letters)
+{
+    int fd;
+    ssize_t read_count, write_count;
+    char *buffer;
 
-    if (filename == NULL) {
-        return 0;
+    if (filename == NULL)
+        return (0);
+
+    fd = open(filename, O_RDONLY);
+    if (fd == -1)
+        return (0);
+
+    buffer = malloc(sizeof(char) * letters);
+    if (buffer == NULL)
+    {
+        close(fd);
+        return (0);
     }
 
-    file_descriptor = open(filename, O_RDONLY);
-    if (file_descriptor == -1) {
-        return 0;
+    read_count = read(fd, buffer, letters);
+    if (read_count == -1)
+    {
+        free(buffer);
+        close(fd);
+        return (0);
     }
 
-    while ((read_result = read(file_descriptor, buffer, sizeof(buffer))) > 0 && total_read < (ssize_t)letters) {
-        write_result = write(STDOUT_FILENO, buffer, (size_t)read_result);
-        if (write_result != read_result || write_result == -1) {
-            close(file_descriptor);
-            return 0;
-        }
-
-        total_read += read_result;
+    write_count = write(STDOUT_FILENO, buffer, read_count);
+    if (write_count == -1 || write_count != read_count)
+    {
+        free(buffer);
+        close(fd);
+        return (0);
     }
 
-    close(file_descriptor);
-    return total_read;
+    free(buffer);
+    close(fd);
+
+    return (write_count);
 }
+
