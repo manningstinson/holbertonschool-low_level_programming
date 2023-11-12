@@ -11,41 +11,39 @@
  */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
-    listint_t *new_node, *temp = *head;
-    unsigned int i = 0;
+	listint_t *new_node, *temp = *head;
+	unsigned int i = 0;
 
-    if (head == NULL)
-        return NULL;
+	if (head == NULL)
+		return (NULL);
 
-    new_node = malloc(sizeof(listint_t));
-    if (new_node == NULL)
-        return NULL;
+	new_node = malloc(sizeof(listint_t));
+	if (new_node == NULL)
 
-    new_node->n = n;
+		return (NULL);
+	new_node->n = n;
 
-    if (idx == 0)
-    {
-        new_node->next = *head;
-        *head = new_node;
-        return new_node;
-    }
+	if (idx == 0)
+	{
+		new_node->next = *head;
+		*head = new_node;
+		return (new_node);
+	}
+	while (temp != NULL && i < idx - 1)
+	{
+		temp = temp->next;
+		i++;
+	}
+	if (temp == NULL)
+	{
+		free(new_node);
+		return (NULL);
+	}
 
-    while (temp != NULL && i < idx - 1)
-    {
-        temp = temp->next;
-        i++;
-    }
+	new_node->next = temp->next;
+	temp->next = new_node;
 
-    if (temp == NULL)
-    {
-        free(new_node);
-        return NULL;
-    }
-
-    new_node->next = temp->next;
-    temp->next = new_node;
-
-    return new_node;
+	return (new_node);
 }
 
 /**
@@ -57,33 +55,32 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
  */
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
-    listint_t *current, *temp;
-    unsigned int i = 0;
+	listint_t *current, *temp;
+	unsigned int i = 0;
 
-    if (head == NULL || *head == NULL)
-        return -1;
+	if (head == NULL || *head == NULL)
+		return (-1);
 
-    current = *head;
+	current = *head;
+	if (index == 0)
+	{
+		*head = (*head)->next;
+		free(current);
+		return (1);
+	}
 
-    if (index == 0)
-    {
-        *head = (*head)->next;
-        free(current);
-        return 1;
-    }
+	while (current != NULL && i < index - 1)
+	{
+		current = current->next;
+		i++;
+	}
 
-    while (current != NULL && i < index - 1)
-    {
-        current = current->next;
-        i++;
-    }
+	if (current == NULL || current->next == NULL)
+		return (-1);
 
-    if (current == NULL || current->next == NULL)
-        return -1;
+	temp = current->next;
+	current->next = temp->next;
+	free(temp);
 
-    temp = current->next;
-    current->next = temp->next;
-    free(temp);
-
-    return 1;
+	return (1);
 }
