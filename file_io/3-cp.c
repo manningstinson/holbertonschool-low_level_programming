@@ -40,16 +40,4 @@ int main(int argc, char *argv[])
             exit(99);
         }
     }
-    if (read_bytes == -1 || close(fd_from) == -1)
-    {
-        dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
-        exit(98);
-    }
-    if (close(fd_to) == -1)
-    {
-        dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_to);
-        exit(100);
-    }
-    return (0);
-}
-
+    if (read_b
