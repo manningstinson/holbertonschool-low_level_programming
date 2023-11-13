@@ -51,9 +51,6 @@ int main(int argc, char *argv[])
             exit(99);
         }
     }
-<<<<<<< HEAD
-    if (read_b
-=======
 
     if (read_bytes == -1)
     {
@@ -77,4 +74,3 @@ int main(int argc, char *argv[])
 
     return (0);
 }
->>>>>>> 5e9f206fdca59a8740fccfb02b3623153837f9f1
