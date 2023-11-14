@@ -10,8 +10,7 @@ The purpose of this function is likely to determine the length or size of a link
 ### Project Code
 [Singly Linked Lists: Task 1 ](https://github.com/manningstinson/holbertonschool-low_level_programming/blob/main/singly_linked_lists/1-list_len.c)
 
-# Function Explanation
-Certainly! Let's break down the code into individual code blocks with detailed explanations:
+## Function Explanation
 
 **Code Block 1: Function Prototype**
 ```c
