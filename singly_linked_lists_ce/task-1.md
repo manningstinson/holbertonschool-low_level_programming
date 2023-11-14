@@ -14,7 +14,7 @@ The purpose of this function is likely to determine the length or size of a link
 
 ## Function Explanation
 
-**Code Block 1: Function Prototype**
+**Function Prototype**
 ```c
 // Function prototype
 size_t list_len(const list_t *h);
@@ -23,13 +23,13 @@ This line declares the prototype of a C function named `list_len`.
 It takes a constant pointer (`const list_t *h`) to an object of type `list_t` as a parameter.
 It returns a value of type `size_t`, which is commonly used for sizes and counts.
 
-**Code Block 2: Header Inclusion**
+**Header Inclusion**
 ```c
 #include <stddef.h> // Include the necessary header for size_t
 ```
 This line includes the `<stddef.h>` header, which is necessary for the definition of the `size_t` type.
 
-**Code Block 3: Linked List Structure Definition**
+**Linked List Structure Definition**
 ```c
 // Definition of the list structure (assuming it exists somewhere in the code)
 struct list {
@@ -44,7 +44,7 @@ The structure might contain fields like `data` for the actual data and `next` fo
 **See header definition file here**
 [Singly Linked Lists: Header definition file <br> <br>](https://github.com/manningstinson/holbertonschool-low_level_programming/blob/main/singly_linked_lists/lists.h)
 
-**Code Block 4: Typedef for Convenience**
+**Typedef for Convenience**
 ```c
 // Typedef for convenience
 typedef struct list list_t;
@@ -53,7 +53,7 @@ Explanation:
 This line uses `typedef` to create an alias `list_t` for the `struct list`.
 This makes it more convenient to refer to the linked list type as `list_t` instead of `struct list`.
 
-**Code Block 5: Function Implementation**
+**Function Implementation**
 ```c
 // Function implementation
 size_t list_len(const list_t *h) {
