@@ -71,7 +71,7 @@ void free_list(list_t *head);
 
 #endif
 ```
-[Singly Linked Lists: Header definition file <br> <br>](https://github.com/manningstinson/holbertonschool-low_level_programming/blob/main/singly_linked_lists/lists.h)
+[Singly Linked Lists: Header definition file](https://github.com/manningstinson/holbertonschool-low_level_programming/blob/main/singly_linked_lists/lists.h)
 
 ## Typedef
 ```c
