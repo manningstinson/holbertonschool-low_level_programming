@@ -41,7 +41,7 @@ struct list {
 This block assumes the existence of a structure named `list` that represents linked list nodes.
 The structure might contain fields like `data` for the actual data and `next` for a pointer to the next node.
 
-**See header definition file here**
+**Header Definition**
 
 [Singly Linked Lists: Header definition file <br> <br>](https://github.com/manningstinson/holbertonschool-low_level_programming/blob/main/singly_linked_lists/lists.h)
 
