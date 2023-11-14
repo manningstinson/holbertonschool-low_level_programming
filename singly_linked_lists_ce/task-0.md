@@ -3,7 +3,7 @@
 /* 
    Write a function that prints all the elements of a list_t list.
    
-   ### Prototype: `size_t print_list(const list_t *h);`
+  **Prototype: `size_t print_list(const list_t *h);`**
    ^^^ Define the function prototype indicating its name, parameters, and return type.
 
    Return: the number of nodes
