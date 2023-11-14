@@ -5,4 +5,4 @@
 
 
 ### Project Code
-[Singly Linked Lists: Task 0 ](https://github.com/manningstinson/holbertonschool-low_level_programming/blob/main/singly_linked_lists/0-print_list.c)
+[Singly Linked Lists: Task 1 ](https://github.com/manningstinson/holbertonschool-low_level_programming/blob/main/singly_linked_lists/1-list_len.c)
