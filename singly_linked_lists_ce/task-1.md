@@ -12,9 +12,7 @@ The purpose of this function is likely to determine the length or size of a link
 ## Project Code
 [Singly Linked Lists: Task 1 ](https://github.com/manningstinson/holbertonschool-low_level_programming/blob/main/singly_linked_lists/1-list_len.c)
 
-## Function Explanation
-
-**Function Prototype**
+## Function Definition
 ```c
 // Function prototype
 size_t list_len(const list_t *h);
