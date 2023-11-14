@@ -53,20 +53,20 @@ size_t print_list(const list_t *h)
 {
 ```
 
-- **Function Signature**: This line starts the function definition. It declares a function named `print_list` that takes a single parameter, which is a constant pointer to a `list_t` structure. The function returns a `size_t` value.
+**Function Signature**: This line starts the function definition. It declares a function named `print_list` that takes a single parameter, which is a constant pointer to a `list_t` structure. The function returns a `size_t` value.
 
 ```c
 	size_t count = 0;
 ```
 
-- **Variable Declaration**: This line declares a variable named `count` of type `size_t` and initializes it to 0. This variable will be used to count the number of nodes in the list.
+**Variable Declaration**: This line declares a variable named `count` of type `size_t` and initializes it to 0. This variable will be used to count the number of nodes in the list.
 
 ```c
 	while (h != NULL)
 	{
 ```
 
-- **While Loop**: This line starts a `while` loop that continues as long as the pointer `h` is not equal to `NULL`. The loop iterates through each node of the linked list.
+**While Loop**: This line starts a `while` loop that continues as long as the pointer `h` is not equal to `NULL`. The loop iterates through each node of the linked list.
 
 ```c
 		if (h->str == NULL)
@@ -75,7 +75,7 @@ size_t print_list(const list_t *h)
 			printf("[%u] %s\n", h->len, h->str);
 ```
 
-- **Conditional Statement**: Inside the loop, there's an `if-else` statement. It checks if the `str` member of the current node is `NULL`. If it is, it prints "[0] (nil)". Otherwise, it prints the length (`len`) and the string (`str`) of the node.
+**Conditional Statement**: Inside the loop, there's an `if-else` statement. It checks if the `str` member of the current node is `NULL`. If it is, it prints "[0] (nil)". Otherwise, it prints the length (`len`) and the string (`str`) of the node.
 
 ```c
 		count++;
@@ -83,11 +83,11 @@ size_t print_list(const list_t *h)
 	}
 ```
 
-- **Increment and Update**: After printing the information for the current node, the `count` variable is incremented, and the pointer `h` is updated to point to the next node in the list.
+**Increment and Update**: After printing the information for the current node, the `count` variable is incremented, and the pointer `h` is updated to point to the next node in the list.
 
 ```c
 	return (count);
 }
 ```
 
-- **Return Statement**: Finally, the function returns the total count of nodes in the linked list after iterating through all nodes. The return type is `size_t`, as specified in the function signature.
+**Return Statement**: Finally, the function returns the total count of nodes in the linked list after iterating through all nodes. The return type is `size_t`, as specified in the function signature.
