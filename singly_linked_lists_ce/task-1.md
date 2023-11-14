@@ -40,8 +40,6 @@ This block assumes the existence of a structure named `list` that represents lin
 The structure might contain fields like `data` for the actual data and `next` for a pointer to the next node.
 
 ## Header Definition
-[Singly Linked Lists: Header definition file <br> <br>](https://github.com/manningstinson/holbertonschool-low_level_programming/blob/main/singly_linked_lists/lists.h)
-
 This code block includes the header guard #ifndef LISTS_H, #define LISTS_H, and #endif to prevent double inclusion, making it suitable for a header file (lists.h). It also provides brief descriptions of the structure and function prototypes.
 
 ```c
@@ -73,6 +71,8 @@ void free_list(list_t *head);
 
 #endif
 ```
+[Singly Linked Lists: Header definition file <br> <br>](https://github.com/manningstinson/holbertonschool-low_level_programming/blob/main/singly_linked_lists/lists.h)
+
 ## Typedef
 ```c
 // Typedef for convenience
