@@ -1,3 +1,5 @@
+<img width="1280" alt="singly_linked_lists_ce" src="https://github.com/manningstinson/holbertonschool-low_level_programming/assets/104523090/e6f8d517-2fab-4950-b48f-67f02f047654">
+
 # Task 1: Write a function that returns the number of elements in a linked list_t list.
 
 ### Prototype: `size_t list_len(const list_t *h);`
