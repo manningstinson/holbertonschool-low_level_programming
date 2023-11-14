@@ -49,7 +49,6 @@ The structure might contain fields like `data` for the actual data and `next` fo
 // Typedef for convenience
 typedef struct list list_t;
 ```
-Explanation:
 This line uses `typedef` to create an alias `list_t` for the `struct list`.
 This makes it more convenient to refer to the linked list type as `list_t` instead of `struct list`.
 
