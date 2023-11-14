@@ -66,10 +66,9 @@ size_t list_len(const list_t *h) {
 
     return count; // Return the total count, which is the length of the linked list
 }
-```
-Explanation:
-- This block provides the implementation of the `list_len` function.
-- It initializes a variable `count` to zero, which will be used to count the nodes in the linked list.
-- It uses a `while` loop to traverse the linked list (`h`) until it reaches the end (when `h` becomes `NULL`).
-- For each node, it increments the `count` and moves to the next node (`h = h->next`).
-- Finally, the function returns the total count, representing the length of the linked list.
+``
+This block provides the implementation of the `list_len` function.
+It initializes a variable `count` to zero, which will be used to count the nodes in the linked list.
+It uses a `while` loop to traverse the linked list (`h`) until it reaches the end (when `h` becomes `NULL`).
+For each node, it increments the `count` and moves to the next node (`h = h->next`).
+Finally, the function returns the total count, representing the length of the linked list.
