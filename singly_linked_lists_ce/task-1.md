@@ -17,17 +17,15 @@ The purpose of this function is likely to determine the length or size of a link
 // Function prototype
 size_t list_len(const list_t *h);
 ```
-Explanation:
-- This line declares the prototype of a C function named `list_len`.
-- It takes a constant pointer (`const list_t *h`) to an object of type `list_t` as a parameter.
-- It returns a value of type `size_t`, which is commonly used for sizes and counts.
+This line declares the prototype of a C function named `list_len`.
+It takes a constant pointer (`const list_t *h`) to an object of type `list_t` as a parameter.
+It returns a value of type `size_t`, which is commonly used for sizes and counts.
 
 **Code Block 2: Header Inclusion**
 ```c
 #include <stddef.h> // Include the necessary header for size_t
 ```
-Explanation:
-- This line includes the `<stddef.h>` header, which is necessary for the definition of the `size_t` type.
+This line includes the `<stddef.h>` header, which is necessary for the definition of the `size_t` type.
 
 **Code Block 3: Linked List Structure Definition**
 ```c
@@ -38,9 +36,8 @@ struct list {
     // ...
 };
 ```
-Explanation:
-- This block assumes the existence of a structure named `list` that represents linked list nodes.
-- The structure might contain fields like `data` for the actual data and `next` for a pointer to the next node.
+This block assumes the existence of a structure named `list` that represents linked list nodes.
+The structure might contain fields like `data` for the actual data and `next` for a pointer to the next node.
 
 **Code Block 4: Typedef for Convenience**
 ```c
@@ -48,8 +45,8 @@ Explanation:
 typedef struct list list_t;
 ```
 Explanation:
-- This line uses `typedef` to create an alias `list_t` for the `struct list`.
-- This makes it more convenient to refer to the linked list type as `list_t` instead of `struct list`.
+This line uses `typedef` to create an alias `list_t` for the `struct list`.
+This makes it more convenient to refer to the linked list type as `list_t` instead of `struct list`.
 
 **Code Block 5: Function Implementation**
 ```c
