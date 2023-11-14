@@ -34,15 +34,15 @@ To summarize, the function `print_list` takes a pointer to a constant `list_t` o
  */
 ```
 
-- **`print_list - prints all the elements of a list_t list`**: This is a documentation comment providing a brief description of the function's purpose. It indicates that the function is designed to print all elements of a linked list of type `list_t`.
+**`print_list - prints all the elements of a list_t list`**: This is a documentation comment providing a brief description of the function's purpose. It indicates that the function is designed to print all elements of a linked list of type `list_t`.
 
-- **`@h: pointer to the head of the list`**: This is a parameter comment. It specifies that `h` is a parameter representing a pointer to the head of the linked list. The `@h` notation is often used to indicate function parameters in certain documentation styles.
+**`@h: pointer to the head of the list`**: This is a parameter comment. It specifies that `h` is a parameter representing a pointer to the head of the linked list. The `@h` notation is often used to indicate function parameters in certain documentation styles.
 
-- **`Return: the number of nodes`**: This comment explains the return value of the function. The function is expected to return the total number of nodes in the linked list.
+**`Return: the number of nodes`**: This comment explains the return value of the function. The function is expected to return the total number of nodes in the linked list.
 
-- **`Format: see example`**: This comment suggests that the function output should follow a specific format, similar to an example. This format might be related to how each node's information is displayed.
+**`Format: see example`**: This comment suggests that the function output should follow a specific format, similar to an example. This format might be related to how each node's information is displayed.
 
-- **`If str is NULL, print [0] (nil)`**: This comment provides a specific instruction regarding the handling of nodes with a `NULL` string (`str`). It states that in such cases, the function should print "[0] (nil)".
+**`If str is NULL, print [0] (nil)`**: This comment provides a specific instruction regarding the handling of nodes with a `NULL` string (`str`). It states that in such cases, the function should print "[0] (nil)".
 
-- **`You are allowed to use printf`**: This comment clarifies that the function is permitted to use the `printf` function for output. It's a note to the programmer indicating that using `printf` is acceptable within the scope of this function.
+**`You are allowed to use printf`**: This comment clarifies that the function is permitted to use the `printf` function for output. It's a note to the programmer indicating that using `printf` is acceptable within the scope of this function.
 
