@@ -9,7 +9,7 @@ The purpose of this function is likely to determine the length or size of a link
 `list_len`: This is the name of the function.<br> <br>
 `const list_t *h`: This is the parameter of the function. It's a pointer (`*`) to a constant (`const`) object of type.  `list_t`. The `const` qualifier indicates that the function won't modify the data pointed to by `h`.
 
-### Project Code
+## Project Code
 [Singly Linked Lists: Task 1 ](https://github.com/manningstinson/holbertonschool-low_level_programming/blob/main/singly_linked_lists/1-list_len.c)
 
 ## Function Explanation
@@ -23,13 +23,13 @@ This line declares the prototype of a C function named `list_len`.
 It takes a constant pointer (`const list_t *h`) to an object of type `list_t` as a parameter.
 It returns a value of type `size_t`, which is commonly used for sizes and counts.
 
-### Header Inclusion
+## Header Inclusion
 ```c
 #include <stddef.h> // Include the necessary header for size_t
 ```
 This line includes the `<stddef.h>` header, which is necessary for the definition of the `size_t` type.
 
-### Linked List Definition
+## Linked List Definition
 ```c
 // Definition of the list structure (assuming it exists somewhere in the code)
 struct list {
@@ -41,9 +41,9 @@ struct list {
 This block assumes the existence of a structure named `list` that represents linked list nodes.
 The structure might contain fields like `data` for the actual data and `next` for a pointer to the next node.
 
-### Header Definition
+## Header Definition
 [Singly Linked Lists: Header definition file <br> <br>](https://github.com/manningstinson/holbertonschool-low_level_programming/blob/main/singly_linked_lists/lists.h)
-### Typedef
+## Typedef
 ```c
 // Typedef for convenience
 typedef struct list list_t;
@@ -51,7 +51,7 @@ typedef struct list list_t;
 This line uses `typedef` to create an alias `list_t` for the `struct list`.
 This makes it more convenient to refer to the linked list type as `list_t` instead of `struct list`.
 
-### Function Implementation
+## Function Implementation
 ```c
 // Function implementation
 size_t list_len(const list_t *h) {
