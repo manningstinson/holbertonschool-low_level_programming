@@ -11,8 +11,6 @@
 ### Project Code
 [Singly Linked Lists: Task 0 ](https://github.com/manningstinson/holbertonschool-low_level_programming/blob/main/singly_linked_lists/0-print_list.c)
 
-singly_linked_lists/0-print_list.c
-
 ## Breaking down Prototype (Function Definition)
 To summarize, the function `print_list` takes a pointer to a constant `list_t` object (`const list_t *h`) as its parameter and returns a `size_t` value.
 
