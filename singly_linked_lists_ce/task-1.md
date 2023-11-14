@@ -9,3 +9,67 @@ The purpose of this function is likely to determine the length or size of a link
 
 ### Project Code
 [Singly Linked Lists: Task 1 ](https://github.com/manningstinson/holbertonschool-low_level_programming/blob/main/singly_linked_lists/1-list_len.c)
+
+# Function Explanation
+Certainly! Let's break down the code into individual code blocks with detailed explanations:
+
+**Code Block 1: Function Prototype**
+```c
+// Function prototype
+size_t list_len(const list_t *h);
+```
+Explanation:
+- This line declares the prototype of a C function named `list_len`.
+- It takes a constant pointer (`const list_t *h`) to an object of type `list_t` as a parameter.
+- It returns a value of type `size_t`, which is commonly used for sizes and counts.
+
+**Code Block 2: Header Inclusion**
+```c
+#include <stddef.h> // Include the necessary header for size_t
+```
+Explanation:
+- This line includes the `<stddef.h>` header, which is necessary for the definition of the `size_t` type.
+
+**Code Block 3: Linked List Structure Definition**
+```c
+// Definition of the list structure (assuming it exists somewhere in the code)
+struct list {
+    // Define the structure of your linked list nodes
+    // (e.g., data and a pointer to the next node)
+    // ...
+};
+```
+Explanation:
+- This block assumes the existence of a structure named `list` that represents linked list nodes.
+- The structure might contain fields like `data` for the actual data and `next` for a pointer to the next node.
+
+**Code Block 4: Typedef for Convenience**
+```c
+// Typedef for convenience
+typedef struct list list_t;
+```
+Explanation:
+- This line uses `typedef` to create an alias `list_t` for the `struct list`.
+- This makes it more convenient to refer to the linked list type as `list_t` instead of `struct list`.
+
+**Code Block 5: Function Implementation**
+```c
+// Function implementation
+size_t list_len(const list_t *h) {
+    size_t count = 0; // Initialize a variable to count the nodes
+
+    // Traverse the linked list
+    while (h != NULL) {
+        count++;       // Increment the count for each node
+        h = h->next;   // Move to the next node
+    }
+
+    return count; // Return the total count, which is the length of the linked list
+}
+```
+Explanation:
+- This block provides the implementation of the `list_len` function.
+- It initializes a variable `count` to zero, which will be used to count the nodes in the linked list.
+- It uses a `while` loop to traverse the linked list (`h`) until it reaches the end (when `h` becomes `NULL`).
+- For each node, it increments the `count` and moves to the next node (`h = h->next`).
+- Finally, the function returns the total count, representing the length of the linked list.
