@@ -2,5 +2,7 @@
 
 ### Prototype: `size_t list_len(const list_t *h);`
 
+
+
 ### Project Code
 [Singly Linked Lists: Task 0 ](https://github.com/manningstinson/holbertonschool-low_level_programming/blob/main/singly_linked_lists/0-print_list.c)
