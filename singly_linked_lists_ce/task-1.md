@@ -42,11 +42,12 @@ The structure might contain fields like `data` for the actual data and `next` fo
 ## Header Definition
 [Singly Linked Lists: Header definition file <br> <br>](https://github.com/manningstinson/holbertonschool-low_level_programming/blob/main/singly_linked_lists/lists.h)
 
+```c
 #ifndef LISTS_H
 #define LISTS_H
 
 #include <stddef.h>
-```c
+
 /**
  * struct list_s - singly linked list
  * @str: string (malloc'ed string)
