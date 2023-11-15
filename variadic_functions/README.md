@@ -1,2 +1,3 @@
-![30](https://github.com/manningstinson/holbertonschool-low_level_programming/assets/104523090/687b8843-d68a-45df-89ea-7f1b5d93a6f0)
+![31](https://github.com/manningstinson/holbertonschool-low_level_programming/assets/104523090/1ff1e96e-fe68-4936-b400-8bd6e16c0edc)
 # Variadic Functions
+
