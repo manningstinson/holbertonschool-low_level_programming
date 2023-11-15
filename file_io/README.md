@@ -1,2 +1,2 @@
-![14](https://github.com/manningstinson/holbertonschool-low_level_programming/assets/104523090/39c61b1d-3d90-4a8b-8bb4-0758efb7dab4)
+![33](https://github.com/manningstinson/holbertonschool-low_level_programming/assets/104523090/59a4736f-4915-4658-8d3c-c506b65c333c)
 # File I/O
