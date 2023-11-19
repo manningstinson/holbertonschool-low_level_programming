@@ -1,21 +1,35 @@
-#include "lists.h"
+#include <stdlib.h>
+#include "hash_tables.h"
 
 /**
- * print_dlistint - Prints all elements of a dlistint_t list
- * @h: Pointer to the head of the list
- * Return: Number of nodes
+ * hash_table_create - Creates a hash table
+ * @size: Size of the array
+ *
+ * Return: Pointer to the newly created hash table, or NULL if an error occurs
  */
-size_t print_dlistint(const dlistint_t *h)
+hash_table_t *hash_table_create(unsigned long int size)
 {
-    size_t count = 0;
+    hash_table_t *hash_table;
+    unsigned long int i;
 
-    while (h != NULL)
+    if (size == 0)
+        return NULL;
+
+    hash_table = malloc(sizeof(hash_table_t));
+    if (hash_table == NULL)
+        return NULL;
+
+    hash_table->size = size;
+    hash_table->array = malloc(sizeof(hash_node_t *) * size);
+    if (hash_table->array == NULL)
     {
-        printf("%d\n", h->n);
-        h = h->next;
-        count++;
+        free(hash_table);
+        return NULL;
     }
 
-    return count;
+    for (i = 0; i < size; i++)
+        hash_table->array[i] = NULL;
+
+    return hash_table;
 }
 
