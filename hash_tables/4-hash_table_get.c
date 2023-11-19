@@ -8,26 +8,23 @@
  *
  * Return: The value associated with the key, or NULL if key couldn't be found
  */
+
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
-    unsigned long int index;
-    hash_node_t *current;
+	unsigned long int index;
+	hash_node_t *current;
 
-    if (ht == NULL || key == NULL || *key == '\0')
-        return NULL;
+	if (ht == NULL || key == NULL || *key == '\0')
+		return (NULL);
 
-    /* Get the index using the key_index function */
-    index = key_index((unsigned char *)key, ht->size);
+	index = key_index((unsigned char *)key, ht->size);
+	current = ht->array[index];
 
-    /* Search for the key in the list at the calculated index */
-    current = ht->array[index];
-    while (current)
-    {
-        if (strcmp(current->key, key) == 0)
-            return current->value; /* Key found, return the associated value */
-        current = current->next;
-    }
-
-    return NULL; /* Key not found */
+	while (current)
+	{
+		if (strcmp(current->key, key) == 0)
+			return (current->value);
+		current = current->next;
+	}
+	return (NULL);
 }
-
